@@ -6,8 +6,10 @@ import configureStore from './store/configureStore';
 import { Router, browserHistory } from 'react-router';
 import routes from './routes';
 import './styles/styles.css';
+import { loadCourses } from './actions/courseActions';
 
 const store = configureStore();
+store.dispatch(loadCourses());
 
 render(
 	<Provider store={store}>
