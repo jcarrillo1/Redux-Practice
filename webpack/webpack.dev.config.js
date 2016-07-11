@@ -5,6 +5,7 @@ const buildPath = resolve(__dirname, '..', 'public', 'dist');
 const srcPath = resolve(__dirname, '..', 'src', 'index');
 
 export default {
+	debug:true,
 	devtool: 'eval-source-map',
 	entry: [
 		'webpack-hot-middleware/client?reload=true',

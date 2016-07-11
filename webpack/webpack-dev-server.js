@@ -9,8 +9,8 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 const compiler = webpack(config);
 const options = {
-	quiet: false,
-	noInfo: false,
+	quiet: true,
+	noInfo: true,
 	hot: true,
 	inline: true,
 	publicPath: config.output.publicPath,
